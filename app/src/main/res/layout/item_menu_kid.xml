@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/kid_avatar_menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle_white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            fresco:placeholderImage="@drawable/logo"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="@color/colorAccent"
+            fresco:roundingBorderPadding="2px" />
+        <View
+            android:id="@+id/view_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cirle_orange_stroke"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_kid_name_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Lưu Lê Vy"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_kid_birthday_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_kid_name_menu"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:text="25-11-2012"
+            android:textColor="@color/time_color" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_isActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/orange_rounded_bolder_button"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:text="Đang dùng"
+        android:textColor="@color/orange_button_color"
+        android:textSize="10sp" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#f9a751</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBolder">#FFFFFF</color>
+    <color name="colorButtonLogin">#f9a751</color>
+
+    <color name="tab_disable">#FF888888</color>
+    <color name="tab_enable">#FFFFFF</color>
+    <color name="tab_checked">#F3CD70</color>
+    <color name="tab_unchecked">#FFFFFF</color>
+
+    <color name="time_color">#FF89A8C2</color>
+    <color name="line_color">#FF4377A2</color>
+    <color name="blue_button_color">#FF2CA4A2</color>
+    <color name="orange_button_color">#FFF9A83C</color>
+    <color name="shadow_color">#80080808</color>
+    <color name="menu_kid_background_color">#FF304A7B</color>
+    <color name="menu_time_table_color">#33000000</color>
+    <color name="divider_color">#FFE7E7E7</color>
+    <color name="cirle_time_table">#FFD8D8D8</color>
+</resources>

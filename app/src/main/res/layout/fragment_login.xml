@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="vn.com.kidy.view.fragment.LoginFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_edt_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:id="@+id/rl_edt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_login_top"
+                android:gravity="center_vertical"
+                android:hint="email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#9ea7bf"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_email"
+                android:background="@drawable/round_login_bottom"
+                android:gravity="center_vertical"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#9ea7bf"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_error"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_edt_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Wrong password!"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_submit_login"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="@string/btn_login"
+            android:textColor="@color/colorBolder"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_edt_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lst_kids"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/parent_avatar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            app:placeholderImage="@drawable/logo"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/txt_hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parent_avatar"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:text="Xin chào Bố 'Lưu Qung Trung'"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_list_kids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_hello"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lst_kids"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="16dp"
+            android:id="@+id/rv_kids"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_list_kids">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

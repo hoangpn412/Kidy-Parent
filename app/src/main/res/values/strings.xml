@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kidy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btn_login">Đăng Nhập</string>
+    <string name="error_username">Bạn chưa nhập tài khoản!</string>
+    <string name="error_password">Bạn chưa nhập mật khẩu!</string>
+    <string name="error_login">Tài khoản hoặc mật khẩu chưa đúng!</string>
+    <string name="error_server">Lỗi kết nối với Server. Bạn vui lòng đăng nhập lại!</string>
+    <string name="hello">Xin chào</string>
+    <string name="lst_kids">CHỌN SỔ LIÊN LẠC</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_calendar">Lịch</string>
+    <string name="menu_news">Tin tức</string>
+    <string name="menu_comment">Nhận xét</string>
+    <string name="menu_media">Media</string>
+
+    <string name="write_permission_denied">Bạn không thể tải ảnh nếu không cấp quyền truy cập cho ứng dụng</string>
+</resources>

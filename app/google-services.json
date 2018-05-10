@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "218003288604",
+    "firebase_url": "https://kidy-78472.firebaseio.com",
+    "project_id": "kidy-78472",
+    "storage_bucket": "kidy-78472.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218003288604:android:a5d4b36d1fb5a9bf",
+        "android_client_info": {
+          "package_name": "vn.com.kidy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218003288604-q24oqnf6rbppjggthq5uipo16ntrbgj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANpHJPNoIFbILZWxrWcUCkjCXOsk4rfSM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

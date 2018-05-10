@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.com.kidy.view.fragment.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/sc_data"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/item_home_news"
+                layout="@layout/item_home_news" />
+
+            <include
+                android:id="@+id/item_home_note"
+                layout="@layout/item_home_note" />
+
+            <include
+                android:id="@+id/item_home_media"
+                layout="@layout/item_home_media"/>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

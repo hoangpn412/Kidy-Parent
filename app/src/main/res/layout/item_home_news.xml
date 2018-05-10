@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        card_view:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:id="@+id/card_home_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_item_home"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/txt_card_news_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="TIN TỨC CHUNG"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/card_home_news_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_title_1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="2"-->
+            <!--android:text="Bé sáng tạo nghệ thuật từ các hình vẽ màu sắc"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_time_1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="2"-->
+            <!--android:text="3 giờ trước"-->
+            <!--android:textColor="@color/time_color"-->
+            <!--android:textSize="12sp" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@color/line_color" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_title_2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="2"-->
+            <!--android:text="Tuyển sinh khóa học trong kỳ nghỉ đông 2017 dành cho học sinh Mầm non"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_time_2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="2"-->
+            <!--android:text="5 giờ trước"-->
+            <!--android:textColor="@color/time_color"-->
+            <!--android:textSize="12sp" />-->
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

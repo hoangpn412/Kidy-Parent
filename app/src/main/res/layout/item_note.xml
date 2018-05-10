@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_note_circle"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/orange_button" />
+
+    <TextView
+        android:id="@+id/txt_note_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Phụ huynh: Con đang bị đau bụng, cô để ý đến con còn kêu đau bụng nữa không nhé."
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>
